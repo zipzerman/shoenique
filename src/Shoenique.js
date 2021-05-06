@@ -77,7 +77,7 @@ export default function Shoenique() {
     <>
       <Picker />
       <Canvas>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={1} />
         <Suspense fallback={null}>
           <Shoe />
           <Environment files="royal_esplanade_1k copy.hdr"/>

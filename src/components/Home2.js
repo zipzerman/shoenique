@@ -33,7 +33,7 @@ class Home2 extends Component {
                 <p class="sentence2">You can make your unique slip on</p>
                 <p class="sentence3">by your lifestyle.</p>
                 <div>
-                    <button type="button"><span></span>
+                    <button type="button" className="letcustom"><span></span>
                         <Link to='/custom2' className='custom-butt'> Let's Custom </Link>
                     </button>
             </div>

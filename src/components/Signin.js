@@ -50,8 +50,8 @@ class Login extends Component {
             ( <div className="Error"> {this.state.fireErrors} </div> ) : null;
 
         let submitBtn = this.state.loginBtn ? 
-            (<input className="loginBtn" type="submit" onClick={this.login} value="Sign In" />) : 
-            (<input className="loginBtn" type="submit" onClick={this.register} value="Sign Up" />);
+            (<input className="loginBtn" type="submit" placeholder="email" onClick={this.login} value="Sign In" />) : 
+            (<input className="loginBtn" type="submit" placeholder="password" onClick={this.register} value="Sign Up" />);
 
         let login_register = this.state.loginBtn ?
             (<button className="registerBtn" onClick={() => this.getAction('reg')}>Sign Up</button>) : 
@@ -76,12 +76,12 @@ class Login extends Component {
                     <form>
                         <input className="emailnpasstext" type="text" 
                         value={this.state.email} 
-                        onChange={this.handleChange} 
+                        onChange={this.handleChange}  placeholder="email"
                         name="email" />
 
                         <input type="password" className="emailnpasstext"
                         value={this.state.password} 
-                        onChange={this.handleChange} 
+                        onChange={this.handleChange} placeholder="password"
                         name="password" />
 
                         {submitBtn}
